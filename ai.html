@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>昭昭AI - 智能文化传承者</title>
+    <style>
+        :root {
+            --primary-blue: #2A4B7C;
+            --secondary-blue: #5B8AC9;
+            --accent-blue: #A3C1E6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom right, var(--accent-blue), white);
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--primary-blue);
+            padding: 1rem;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 2rem;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 8rem 2rem 2rem;
+        }
+
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 产品介绍页面 */
+        #product {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .ai-illustration {
+            width: 100%;
+            height: 400px;
+            background: url('/image/9380e0d1-5434-4354-94c2-44816eb3da81.png') center/cover;
+        }
+
+        /* 文化背景页面 */
+        #culture {
+            background: rgba(255,255,255,0.9);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .timeline {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .history-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* 产品体验页面 */
+        #experience {
+            text-align: center;
+        }
+
+        .demo-frame {
+            width: 80%;
+            height: 500px;
+            margin: 2rem auto;
+            border: 3px solid var(--primary-blue);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            #product {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#product">产品介绍</a>
+        <a href="#culture">文化背景</a>
+        <a href="#experience">产品体验</a>
+    </nav>
+
+    <!-- 产品介绍 -->
+    <section id="product">
+        <div class="page">
+            <div class="ai-illustration"></div>
+            <div>
+                <h1 style="color: var(--primary-blue); 
+           margin: -1rem 0 2rem 0;  /* 上边距负向移动 */
+           font-size: 3.5rem;
+           letter-spacing: 2px;
+           position: relative;
+           top: -15px;">
+    昭昭AI助手
+</h1>
+                <div class="feature-card">
+                    <h3>智能文化对话</h3>
+                    <p>基于深度学习的自然语言处理技术，实现跨时代的人文对话体验</p>
+                </div>
+                <div class="feature-card">
+                    <h3>历史知识图谱</h3>
+                    <p>整合超过10万条历史事件数据，构建多维文化认知体系</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 文化背景 -->
+    <section id="culture">
+        <div class="page">
+            <h2 style="color: var(--primary-blue); text-align: center; margin-bottom: 3rem;">昭君出塞 · 数字新生</h2>
+            
+            <div class="timeline">
+                <img src="/image/interface-1.jpg.png" class="history-img">
+                <div>
+                    <h3>历史背景</h3>
+                    <p>昭君出塞是中国历史上的一个故事。王昭君，名嫱（音qiáng），字昭君，原为汉宫宫女。
+                        公元前54年，南匈奴呼韩邪单于被他哥哥北匈奴郅支单于打败，向汉朝称臣归附，曾三次进长安朝觐天子，并向汉元帝自请为婿。元帝遂选宫女赐予他。昭君到匈奴后，被封为“宁胡阏氏”（阏氏，音焉支，意思是王后），象征她将给匈奴带来和平、安宁和兴旺。后来呼韩邪单于在西汉的支持下控制了匈奴全境。后来也有根据这个故事创作的诗歌、琵琶曲、戏剧、电视剧等艺术作品。</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <img src="/image/zhaojun-image.jpg.png" class="history-img">
+                <div>
+                    <h3>昭君的选择</h3>
+                    <p>王昭君，名嫱，为西汉南君秭归人（今属湖北），是齐国王襄之女，因出身平民，身世详情没有考证。17岁时被选入宫待诏。汉元帝时，呼韩邪单于入朝自请为女婿，元帝决定从宫人中挑选一个才貌双全的宫女，嫁给呼韩邪。呼韩邪单于封她为“宁胡阏氏（阏氏为匈奴语，王后之意）”。昭君去世后，她的女儿须卜居次、当云居次、外孙大且渠奢、侄子王歙和王飒。</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <img src="/image/a3bbcb4564462ef19e9a4e9490ab898d28204f923b5170130f66fe7a67dad667 (1).png" class="history-img">
+                <div>
+                    <h3>文化意义</h3>
+                    <p>昭君出塞是中国古代历史上的一个传奇故事，表达了汉匈两族之间的和解与交流，展示了中国古代女性在历史进程中的重要作用，成为了一段脍炙人口的文化遗产。这个故事促进了民族大融合，拉拢了呼韩耶单于，避免了汉朝跟少数民族匈奴的争战，成为后来历代中原王朝处理少数民族关系的一个重要政治手段。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品体验 -->
+    <section id="experience">
+        <div class="page">
+            <h2 style="color: var(--primary-blue); margin-bottom: 2rem;">即刻体验时空对话</h2>
+            <div class="demo-frame">
+                <!-- 替换为实际产品链接 -->
+                <iframe src="https://workbrain.cn/chat" style="width:100%;height:100%;border:none;"></iframe>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 3rem;">
+                <div class="feature-card">
+                    <h3>对话历史人物</h3>
+                    <p>与数字化昭君进行实时对话，感受跨越时空的思想碰撞</p>
+                </div>
+                <div class="feature-card">
+                    <h3>文化知识问答</h3>
+                    <p>随时提问关于汉代历史、丝绸之路文化的各种问题</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
